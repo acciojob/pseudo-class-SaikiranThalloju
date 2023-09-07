@@ -1,1 +1,25 @@
 /*  your css code here. If applicable */
+/* Apply margin to the container */
+#container {
+    margin: 20px;
+    position: relative; /* Required for absolute positioning of pseudo-elements */
+	left:40px;
+}
+
+/* Insert content before the main content of the container */
+#container::before {
+     content: "Before Element";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    position: absolute;
+    left: 40; /* Position at the start of the container */
+}
+
+/* Insert content after the main content of the container */
+#container::after {
+    content: "After Element";
+    color: #f00; /* Red color */
+    font-size: 20px;
+    position: absolute; /* Position relative to the container */
+    left: 60; /* Position at the start of the container */
+}
