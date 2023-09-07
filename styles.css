@@ -3,7 +3,8 @@
 #container {
     margin: 20px;
     position: relative; /* Required for absolute positioning of pseudo-elements */
-	left:40px;
+	left:0px;
+	content:"This is the main container element"
 }
 
 /* Insert content before the main content of the container */
@@ -12,7 +13,7 @@
     color: #f00; /* Red color */
     font-size: 20px;
     position: absolute;
-    left: 40; /* Position at the start of the container */
+    left: 0px; /* Position at the start of the container */
 }
 
 /* Insert content after the main content of the container */
