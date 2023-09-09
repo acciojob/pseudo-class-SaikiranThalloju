@@ -3,12 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>CSS Pseudo-Classes Example</title>
+    <title>Container with Pseudo-Classes</title>
+    <style>
+        #container {
+            margin: 20px;
+            position: relative;
+        }
+
+        #container::before {
+            content: "Before Element";
+            color: #f00;
+            font-size: 20px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* Insert content after the main content of the container */
+        #container::after {
+            content: "After Element";
+            color: #f00;
+            font-size: 20px;
+            position: absolute;
+/*             right: 60px; /* Adjust as needed for positioning */
+            top: 0; */
+        }
+    </style>
 </head>
 <body>
+    <!-- The main container with pseudo-elements -->
     <div id="container">
-       "This is the main conatainer element"
+        This is the main container element
     </div>
 </body>
 </html>
+
